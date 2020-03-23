@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Grid, Segment} from 'semantic-ui-react';
 import './App.css';
 import MainBox from './containers/MainBox.js'
+import SignInBox from './SignInBox'
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
         <Grid.Row >
           <Grid.Column width={10}>
             <Segment>
-              <MainBox />
+              <SignInBox />
             </Segment>
           </Grid.Column>
         </Grid.Row>
