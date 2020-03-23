@@ -50,7 +50,13 @@ class MainBox extends React.Component {
         details = <Bio dog={this.state.dog} />;
         break;
       case "Adoption":
-        details = <Adoption dog={this.state.dog} />;
+        details = (
+          <Adoption
+            dog={this.state.dog}
+            addDogToFavorites={this.props.addDogToFavorites}
+            changeAdoptionToggle={this.props.changeAdoptionToggle}
+          />
+        );
         break;
       default:
         details = null;
@@ -66,7 +72,12 @@ class MainBox extends React.Component {
           selected={this.state.selected}
         />
         {details}
-        <button onClick={this.pickNextDog}>Swipe Me</button>
+        <button onClick={this.pickNextDog} class="ui animated button">
+          <div class="visible content">Swipe Left :( </div>
+          <div class="hidden content">
+            <i aria-hidden="true" class="arrow right icon"></i>
+          </div>
+        </button>
       </div>
     );
   }
