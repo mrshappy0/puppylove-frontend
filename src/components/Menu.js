@@ -13,7 +13,7 @@ const Menu = ({ changeSelected, selected }) => {
         id="IntroTab"
         onClick={handleClick}
       >
-        <i className="user large icon" id="IntroTab" />
+        <i className="paw large icon" id="IntroTab" />
       </a>
 
       <a
@@ -21,7 +21,7 @@ const Menu = ({ changeSelected, selected }) => {
         id="Bio"
         onClick={handleClick}
       >
-        <i className="paw large icon" id="Bio" />
+        <i className="info circle large icon" id="Bio" />
       </a>
 
       <a
